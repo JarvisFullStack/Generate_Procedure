@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteForm));
             this.textBoxNombreTabla = new System.Windows.Forms.TextBox();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.btnProcesar = new System.Windows.Forms.Button();
@@ -78,6 +79,7 @@
             this.Controls.Add(this.btnProcesar);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.textBoxNombreTabla);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeleteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DELETE PROCEDURE";
