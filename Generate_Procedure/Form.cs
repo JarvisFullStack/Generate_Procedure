@@ -33,6 +33,19 @@ namespace Generate_Procedure
             public Nodo() { }
         }
 
+        List<Nodo> GetAllId(List<Nodo> campos)
+        {
+            List<Nodo> listaAllId = new List<Nodo>();
+            foreach(Nodo nodo in campos)
+            {
+                if (nodo.Clave.Contains("Id_"))
+                {
+                    listaAllId.Add(nodo);
+                }
+            }
+            return listaAllId;
+        }
+
        
         List<Nodo> ProcessString(String sql)
         {
@@ -114,8 +127,19 @@ namespace Generate_Procedure
             {
                 procedure += nodo.Clave + ", ";
             }
+
+            List<Nodo> listaAllId = GetAllId(campos);
             procedure = procedure.Remove(procedure.Length - 2);
-            procedure += ") \n\nON (Source." + campos[0].Clave + " = Target." + campos[0].Clave + ") ";
+            // procedure += ") \n\nON (Source." + campos[0].Clave + " = Target." + campos[0].Clave + ") ";
+            procedure += ") \n\nON (";
+            foreach(Nodo n in listaAllId)
+            {
+                procedure += "Source." +n.Clave + " = Target." + n.Clave + " and ";
+            }
+            procedure = procedure.Remove(procedure.Length - 4);
+            procedure += " ) ";
+
+
             procedure += "\n\n WHEN MATCHED THEN UPDATE SET ";
             int i = 0;
             foreach (Nodo nodo in campos)
