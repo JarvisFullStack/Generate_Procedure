@@ -33,6 +33,7 @@
             this.storeProceduresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mergeInsertUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteUpdateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBoxNota = new System.Windows.Forms.TextBox();
             this.LabelNota = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
@@ -46,14 +47,15 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(438, 24);
-            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // storeProceduresToolStripMenuItem
             // 
             this.storeProceduresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mergeInsertUpdateToolStripMenuItem,
-            this.deleteToolStripMenuItem});
+            this.deleteToolStripMenuItem,
+            this.deleteUpdateToolStripMenuItem});
             this.storeProceduresToolStripMenuItem.Name = "storeProceduresToolStripMenuItem";
             this.storeProceduresToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
             this.storeProceduresToolStripMenuItem.Text = "Stored Procedures";
@@ -72,13 +74,20 @@
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
+            // deleteUpdateToolStripMenuItem
+            // 
+            this.deleteUpdateToolStripMenuItem.Name = "deleteUpdateToolStripMenuItem";
+            this.deleteUpdateToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.deleteUpdateToolStripMenuItem.Text = "Delete Update";
+            this.deleteUpdateToolStripMenuItem.Click += new System.EventHandler(this.deleteUpdateToolStripMenuItem_Click);
+            // 
             // textBoxNota
             // 
             this.textBoxNota.Location = new System.Drawing.Point(12, 45);
             this.textBoxNota.Multiline = true;
             this.textBoxNota.Name = "textBoxNota";
             this.textBoxNota.Size = new System.Drawing.Size(414, 125);
-            this.textBoxNota.TabIndex = 1;
+            this.textBoxNota.TabIndex = 0;
             // 
             // LabelNota
             // 
@@ -94,7 +103,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(351, 176);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.btnLimpiar.TabIndex = 3;
+            this.btnLimpiar.TabIndex = 1;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -129,5 +138,6 @@
         private System.Windows.Forms.TextBox textBoxNota;
         private System.Windows.Forms.Label LabelNota;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.ToolStripMenuItem deleteUpdateToolStripMenuItem;
     }
 }

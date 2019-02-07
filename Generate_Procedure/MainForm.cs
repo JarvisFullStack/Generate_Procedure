@@ -33,5 +33,11 @@ namespace Generate_Procedure
         {
             textBoxNota.Clear();
         }
+
+        private void deleteUpdateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteUpdateForm frm = new DeleteUpdateForm();
+            frm.Show();
+        }
     }
 }

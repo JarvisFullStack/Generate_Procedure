@@ -43,7 +43,7 @@
             this.textBoxSentenciaSQL.Multiline = true;
             this.textBoxSentenciaSQL.Name = "textBoxSentenciaSQL";
             this.textBoxSentenciaSQL.Size = new System.Drawing.Size(645, 264);
-            this.textBoxSentenciaSQL.TabIndex = 0;
+            this.textBoxSentenciaSQL.TabIndex = 1;
             // 
             // textBoxSqlResult
             // 
@@ -78,7 +78,7 @@
             this.textBoxNombreTabla.Location = new System.Drawing.Point(280, 31);
             this.textBoxNombreTabla.Name = "textBoxNombreTabla";
             this.textBoxNombreTabla.Size = new System.Drawing.Size(162, 20);
-            this.textBoxNombreTabla.TabIndex = 4;
+            this.textBoxNombreTabla.TabIndex = 0;
             // 
             // label1
             // 
