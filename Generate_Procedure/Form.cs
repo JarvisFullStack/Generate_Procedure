@@ -110,13 +110,31 @@ namespace Generate_Procedure
 
         String generateMergeInsertUpdate(List<Nodo> campos)
         {
-            String procedure = "CREATE PROCEDURE usp_insertar_nombreTabla\n ";
+            String procedure = string.Empty;
+            if (string.IsNullOrEmpty(textBoxNombreTabla.Text.Trim()))
+            {
+               procedure = "CREATE PROCEDURE usp_insertar_nombreTabla\n ";
+            }
+            else
+            {
+                String nombreTabla = textBoxNombreTabla.Text;
+                procedure = "CREATE PROCEDURE usp_insertar_"+nombreTabla.ToLower()+"\n ";
+            }
             foreach(Nodo nodo in campos)
             {
                 procedure += "@" + nodo.Clave + " " + nodo.Valor + ", ";
             }
              procedure = procedure.Remove(procedure.Length-2);
-            procedure += " \n\nAS MERGE NombreTabla AS TARGET USING(SELECT ";
+           
+            if (string.IsNullOrEmpty(textBoxNombreTabla.Text.Trim()))
+            {
+                procedure += " \n\nAS MERGE NombreTabla AS TARGET USING(SELECT ";
+            }
+            else
+            {
+                String nombreTabla = textBoxNombreTabla.Text;
+                procedure += " \n\nAS MERGE "+nombreTabla+" AS TARGET USING(SELECT ";
+            }
             foreach (Nodo nodo in campos)
             {
                 procedure += "@" + nodo.Clave + ", ";
