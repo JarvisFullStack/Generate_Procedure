@@ -55,8 +55,8 @@
             this.mergeInsertUpdateToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.storeProceduresToolStripMenuItem.Name = "storeProceduresToolStripMenuItem";
-            this.storeProceduresToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
-            this.storeProceduresToolStripMenuItem.Text = "Store Procedures";
+            this.storeProceduresToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.storeProceduresToolStripMenuItem.Text = "Stored Procedures";
             // 
             // mergeInsertUpdateToolStripMenuItem
             // 
