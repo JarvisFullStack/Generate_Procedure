@@ -38,7 +38,7 @@ namespace Generate_Procedure
             List<Nodo> listaAllId = new List<Nodo>();
             foreach(Nodo nodo in campos)
             {
-                if (nodo.Clave.Contains("Id_"))
+                if (nodo.Clave.ToLower().Contains("id_"))
                 {
                     listaAllId.Add(nodo);
                 }

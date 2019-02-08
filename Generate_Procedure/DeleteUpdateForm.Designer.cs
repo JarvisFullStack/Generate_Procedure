@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteUpdateForm));
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnProcesar = new System.Windows.Forms.Button();
             this.textBoxResult = new System.Windows.Forms.TextBox();
@@ -109,9 +110,10 @@
             this.Controls.Add(this.btnProcesar);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.textBoxNombreTabla);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeleteUpdateForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DeleteUpdateForm";
+            this.Text = "Delete Update";
             this.ResumeLayout(false);
             this.PerformLayout();
 

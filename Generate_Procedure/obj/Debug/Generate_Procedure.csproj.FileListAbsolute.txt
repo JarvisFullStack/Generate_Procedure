@@ -1,6 +1,7 @@
 C:\Users\PC-Programacion\source\repos\Generate_Procedure\Generate_Procedure\bin\Debug\Generate_Procedure.exe.config
 C:\Users\PC-Programacion\source\repos\Generate_Procedure\Generate_Procedure\bin\Debug\Generate_Procedure.exe
 C:\Users\PC-Programacion\source\repos\Generate_Procedure\Generate_Procedure\bin\Debug\Generate_Procedure.pdb
+C:\Users\PC-Programacion\source\repos\Generate_Procedure\Generate_Procedure\obj\Debug\Generate_Procedure.csprojAssemblyReference.cache
 C:\Users\PC-Programacion\source\repos\Generate_Procedure\Generate_Procedure\obj\Debug\Generate_Procedure.DeleteForm.resources
 C:\Users\PC-Programacion\source\repos\Generate_Procedure\Generate_Procedure\obj\Debug\Generate_Procedure.DeleteUpdateForm.resources
 C:\Users\PC-Programacion\source\repos\Generate_Procedure\Generate_Procedure\obj\Debug\Generate_Procedure.Form1.resources

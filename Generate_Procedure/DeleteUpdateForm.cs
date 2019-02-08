@@ -28,7 +28,7 @@ namespace Generate_Procedure
                 clavePrimaria = "clavePrimaria";
             }
             String procedure = string.Empty;
-            procedure = "CREATE PROCEDURE usp_delete_update_" + tableName + " \n @"+clavePrimaria+" INT\n" +
+            procedure = "CREATE PROCEDURE usp_delete_update_" + tableName.ToLower() + " \n @"+clavePrimaria+" INT\n" +
                 "AS \n BEGIN \n UPDATE "+tableName+" \n" +
                 "SET Status = 2 \n" +
                 "WHERE "+clavePrimaria + " = @"+clavePrimaria+";\n END";
